@@ -2,10 +2,22 @@
   border: 1px solid red;
 }
 
+body {
+  margin: 70px auto;
+  width: 400px;
+}
+
 p {
   visibility: hidden;
   color: red;
   margin: 0px;
+}
+
+section {
+  background-image: linear-gradient(#fffc99, #b1f8f2);
+  border-radius: 25px;
+  text-align: center;
+  padding: 20px;
 }
 
 input,
@@ -14,4 +26,14 @@ textarea,
   display: flex;
   padding: 5px;
   margin-top: 10px;
+  border: none;
+  margin-left: 50px;
+  width: 250px;
+}
+
+#submit {
+  background: white;
+  width: 100px;
+  margin-left: 130px;
+  padding-left: 30px;
 }
