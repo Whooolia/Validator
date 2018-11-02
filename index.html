@@ -1,16 +1,26 @@
+<!-- 항상 docktype, head, body 다 적어주면서 하는 연습하면 좋을 것 같애. 그게 standard이니깐-->
+<!DOCTYPE html>
 <html>
-<section>
-    Name<input id='name' type='text'>
-    <p>ONLY characters available</p>
-    Email<input id='email' type='text'>
-    <p>Not valid email address</p>
-    Number<input id='number' type='text'>
-    <p></p>
-    Message<textarea></ textarea>
-            <button id='submit' type='submit'>Submit</button>
-    </section>
 
-<link rel="stylesheet" type="text/css" href=style.css>
-<script src='main.js' async></script>
+<head>
+    <link rel="stylesheet" type="text/css" href=style.css>
+    <script src='main.js' async></script>
+</head>
+
+<body>
+    <!-- 보통 validation은 form이랑 같이 작성해. form이 client에 입력받은 데이타들을 서버에 전해주는 역할을 하니깐
+         그래서 서버에 전해주기 전에 client 쪽에서 input들을 validate하는 거지-->
+    <form action="" method="POST">
+        <!-- input 앞에 텍스트를 넣고 싶을때는 보통 label tag를 사용해. -->
+        <label>Name</label><input id='name' type='text'>
+        <p>ONLY characters available</p>
+        <label>Email</label><input id='email' type='text'>
+        <p>Not valid email address</p>
+        <label>Number</label><input id='number' type='text'>
+        <p></p>
+        <label>Message</label><textarea></ textarea>
+        <button id='submit' type='submit'>Submit</button>
+    </form>
+</body>
 
 </html>
